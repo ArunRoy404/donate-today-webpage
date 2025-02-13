@@ -270,7 +270,7 @@ footer{
     margin: 40px auto;
 }
 
-
+/* responsive for mobile devices  */
 @media screen and (max-width: 575px) {
     /* banner  */
     .banner{
@@ -339,6 +339,90 @@ footer{
     .email-form{
         width: calc(100% - 40px);
         padding: 20px;
+        border-radius: 10px;
+    }
+    .email-form form{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .email-form input[type="email"]{
+        border-radius: 5px;
+    }
+    .email-form input[type="submit"]{
+        border-radius: 5px;
+    }
+}
+
+
+/* responsive for medium devices  */
+@media screen and (min-width:576px) and (max-width: 1200px) {
+    /* banner  */
+    .banner{
+        padding: 0px 20px;
+        gap: 30px;
+    }
+
+    /* donate  */
+    .donate{
+        margin: 100px auto;
+        padding: 0px 20px;
+    }
+    .donate-card{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .card p{
+        font-size: 20px;
+    }
+    .card{
+        height: 70px;
+    }
+    .donate input[type="number"]{
+        width: calc(100% - 40px)
+    }
+
+    /* donate plan  */
+    .donate-plan{
+        padding: 0px 20px;
+        margin: 100px auto;
+    }
+    .plan-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .plan{
+        width: calc(100% - 40px);
+    }
+
+    /* artice section  */
+    .article-section{
+        padding: 0px 20px;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+    }
+    .article{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .article-detail,.img-container{
+        width: 100%;
+    }
+    .article-detail{
+        height: auto;
+    }
+
+    /* update  */
+    .update{
+        margin-bottom: 50px;
+        padding: 0px 20px;
+    }
+    .email-form{
+        width: calc(100% - 40px);
+        padding: 20px;
+        border-radius: 10px;
     }
     .email-form form{
         flex-direction: column;
