@@ -58,7 +58,7 @@ h1{
 
 /* banner section  */
 .banner{
-    background-image: url('../assets/images/donation9.jpg');
+    background-image: linear-gradient(0.00deg, rgb(18, 18, 18),rgba(18, 18, 18, 0) 100%),url('../assets/images/donation9.jpg');
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -268,4 +268,87 @@ footer{
 .footer-section{
     text-align: center;
     margin: 40px auto;
+}
+
+
+@media screen and (max-width: 575px) {
+    /* banner  */
+    .banner{
+        padding: 0px 20px;
+        gap: 30px;
+    }
+    .banner h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 16px;
+    }
+
+    /* donate  */
+    .donate{
+        margin: 100px auto;
+        padding: 0px 20px;
+    }
+    .donate-card{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .card p{
+        font-size: 20px;
+    }
+    .card{
+        height: 70px;
+    }
+    .donate input[type="number"]{
+        width: calc(100% - 40px)
+    }
+
+    /* donate plan  */
+    .donate-plan{
+        padding: 0px 20px;
+        margin: 100px auto;
+    }
+    .plan-container{
+        display: grid;
+    }
+    .plan{
+        width: calc(100% - 40px);
+    }
+
+    /* artice section  */
+    .article-section{
+        padding: 0px 20px;
+        margin: 100px auto;
+    }
+    .article{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .article-detail,.img-container{
+        width: 100%;
+    }
+    .article-detail{
+        height: auto;
+    }
+
+    /* update  */
+    .update{
+        margin-bottom: 50px;
+        padding: 0px 20px;
+    }
+    .email-form{
+        width: calc(100% - 40px);
+        padding: 20px;
+    }
+    .email-form form{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .email-form input[type="email"]{
+        border-radius: 5px;
+    }
+    .email-form input[type="submit"]{
+        border-radius: 5px;
+    }
 }
