@@ -27,6 +27,16 @@
     border-radius: 5px;
     background: rgb(255, 89, 89);
     border: none;
+    cursor: pointer;
+    transition-duration: 0.3s;
+
+}
+.btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 5px gray;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 
 header, main{
@@ -189,4 +199,73 @@ h1{
     align-items: center;
     gap: 60px;
     margin-bottom: 120px;
+}
+
+/* update section  */
+.update{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 150px;
+}
+.email-form{
+    padding: 75px 190px;
+    background: rgb(255, 244, 214);
+}
+.email-form input[type="email"]{
+    color: rgb(170, 159, 159);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    background: rgb(217, 217, 217);
+    width: 275px;
+    padding: 14px 17px;
+    display: inline;
+}
+.email-form input[type="submit"]{
+    width: 157px;
+    color: rgb(255, 255, 255);
+    border-radius: 0px 5px 5px 0px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px ;
+}
+.email-form input[type="submit"]:hover{
+    color: black;
+}
+.email-form form{
+    display: flex;
+    gap: 0px;
+}
+
+
+/* footer section  */
+footer h3{
+    color: rgb(255, 89, 89);
+    font-family: Lobster;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+footer p{
+    color: rgb(217, 219, 225);
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+}
+footer{
+    background: rgb(11, 13, 23);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-section{
+    text-align: center;
+    margin: 40px auto;
 }
